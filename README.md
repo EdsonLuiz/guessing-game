@@ -53,3 +53,10 @@ Result types are ***enumerations*** (enums), enumeration is a type tha can have 
 For Result the variants are ***Ok*** or ***Err***. Ok indicates successfull operation and inside is the successfully generated value. Err means the operation failed, and Err contains information about how or why the operation failed.
 
 An instance of ```io::Result``` has an ```expect``` method that you can call. If this instance of ```io::Result``` is an ***Err*** value, ```expect``` will cause the program to crash and display the message that you passed as an argument to ```expect```. If this instance of ```io::Result``` is an ***Ok*** value, ```expect``` will take the return value that ***Ok*** is holding and return just that value to you so you can use it.
+
+## Placeholders
+```rust
+println!("You guessed: {}", guess);
+```
+
+The curly brackets is a placeholder that holds the value of each variable listed
